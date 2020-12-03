@@ -1,0 +1,101 @@
+body{
+    background: url(img/55.jpg) no-repeat;
+    background-size: 100%;
+}
+.GameBox{
+    width: 400px;
+    height: 400px;
+    border: 3px solid brown;
+    border-radius: 10px;
+    position: relative;
+    background-color: burlywood;
+}
+.cell,.empty{
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 3px outset burlywood;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    transition: all 0.3s;
+}
+.cell:hover{
+    cursor: cell;
+}
+.empty{
+    border: 0px;
+}
+.cell.correct{
+    border-color: green;
+    border-style: solid;
+}
+#button{
+    margin-top: 10px;
+    margin-left:150px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 16px;
+    color: blueviolet;
+    background-color: burlywood;
+    cursor: pointer;
+}
+.time,.move{
+    width: 55px;
+    height: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+.fon1{
+    background-image: url(img/fon1.jpg);
+}
+.fon2{
+    background-image: url(img/fon2.jpg);
+}
+.fon3{
+    background-image: url(img/fon3.jpg);
+}
+.fon4{
+    background-image: url(img/fon4.jpg);
+}
+.fon5{
+    background-image: url(img/fon5.jpg);
+}
+#game{
+    float: left;
+}
+#counters{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    z-index: -1;
+    float: left;
+}
+table{
+    border: 1px solid black;
+    float: left;
+    margin-left:100px;
+}
+th{
+    text-align: center;
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+}
+tbody>tr:nth-child(1){
+    background-color: gold;
+}
+tbody>tr:nth-child(2){
+    background-color:silver;
+}
+tbody>tr:nth-child(3){
+    background-color:#cd7f32;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пятнашки</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div class="GameBox">
+            <div class="empty"></div>
+        </div>
+        <button id="button" onclick="game()">New Game</button>
+    </div>
+    <div id ="counters">
+        <p>Время</p>
+        <div class="time"></div>
+        <p>Число ходов</p>
+        <div class="move"></div>
+    </div>
+    <table>
+        <thead>
+            <th>Место</th>
+            <th>Ник</th>
+            <th>Время</th>
+            <th>Число ходов</th>
+        </thead>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+     <script src="base.js"></script>
+     <script src="script.js"></script>
+</body>
+</html>
